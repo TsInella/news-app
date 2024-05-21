@@ -4,11 +4,11 @@ import styled from 'styled-components/native';
 
 const PostView = styled.View`
 flex-direction: row;
-background: rgb(96, 140, 153);
+background: rgb(237, 237, 233);  
 padding :20px;
 margin-top:12px;
-border-bottom-width: 1px;
-border-bottom-color: rgba(0,0,0,0.1);
+border-bottom-width: 2px;
+border-bottom-color: rgba(173, 181, 189); 
 border-bottom-style:solid;
 `;
 
@@ -22,7 +22,7 @@ margin-right:12px;
 const PostTitle = styled.Text`
 font-size: 17px;
 font-weight: 700;
-color: white;
+color: black;
 `
 
 const PostDetails = styled.View`

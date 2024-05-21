@@ -43,7 +43,7 @@ export const HomeScreen = ({navigation}) => {
         flex:1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'pink',
+        backgroundColor: 'rgb(237, 237, 233)',
     }}>
       <ActivityIndicator size = "large"/>
       <Text style = {{marginTop:15 }}>Загрузка...</Text>
@@ -52,7 +52,7 @@ export const HomeScreen = ({navigation}) => {
   }
 
   return (
-    <View style = {{backgroundColor: 'rgb(247, 245, 245)'}}>
+    <View style = {{backgroundColor: 'rgb(237, 237, 233)'}}>
       <FlatList
       refreshControl={<RefreshControl refreshing={isLoading}  onRefresh={fetchPosts} />}
         data = {items}

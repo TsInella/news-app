@@ -9,13 +9,15 @@ const PostImage = styled.Image`
 width:100%;
 height:230px;
 border-radius:12px;
-margin-top: 40px;
+
 `;
 
 const PostText = styled.Text`
 font-size: 16px;
 font-weight: 500;
-line-height: 24px;
+line-height: 22px;
+top: 20px;
+left: 10px;
 `;
 
 
@@ -50,7 +52,7 @@ const FullPostScreen = ({route, navigation}) => {
   }
 
     return(
-    <View style = {{padding:20, backgroundColor: 'rgb(182, 209, 217)', height: 720}}>
+    <View style = {{padding:20, backgroundColor: 'rgb(144, 171, 149)', height: 720}}>
         <PostImage source = {{uri: data.imageUrl}}/>
          <PostText>{data.text}</PostText>
     </View>
