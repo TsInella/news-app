@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 import {Text, View, Button, Image, StyleSheet } from 'react-native';
-
 import { gStyle } from '../styles/style';
 
-
-
-export default function Form({route}) {
-    
+export default function FullInfo({route}) {
   return(
     <View style = {styles.main}>
       <Image style = {styles.image} source={{
