@@ -17,7 +17,7 @@ const [font, setFont] = useState(false);
 
 if(font){
   return(
-    <IntroCarousel/>
+    <Navigate/>
   )
 } else{
   return(

@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { StatusBar, Animated, Text, Image, View, StyleSheet, Dimensions } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { StatusBar, Animated, Text, Image, View, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
 const {width, height} = Dimensions.get('screen');
 import { useRef } from 'react';
 import { DotIndicator } from 'react-native-indicators';
@@ -13,27 +12,27 @@ const bgs = ['#A5BBFF', '#DDBEFE', '#FF63ED', '#B98EFF'];
 const DATA = [
   {
     "key": "1",
-    "title": "Multi-lateral intermediate moratorium",
-    "description": "I'll back up the multi-byte XSS matrix, that should feed the SCSI application!",
+    "title": "Информация и действие в одном приложении",
+    "description": "Достижение целей стало проще с нашим приложением для саморазвития",
     "image": "https://cdn-icons-png.freepik.com/512/6858/6858360.png?ga=GA1.1.863853503.1716414990"
   },
   {
     "key": "2",
-    "title": "Automated radical data-warehouse",
-    "description": "Use the optical SAS system, then you can navigate the auxiliary alarm!",
-    "image": "https://cdn-icons-png.freepik.com/512/6858/6858207.png?ga=GA1.1.863853503.1716414990"
+    "title": "Инсайты для лучшей версии тебя",
+    "description": "Саморазвитие с легкостью: статьи и задачи в одном месте",
+    "image": "https://cdn-icons-png.freepik.com/512/6858/6858255.png?ga=GA1.1.863853503.1716414990"
   },
   {
     "key": "3",
-    "title": "Inverse attitude-oriented system engine",
-    "description": "The ADP array is down, compress the online sensor so we can input the HTTP panel!",
-    "image": "https://cdn-icons-png.freepik.com/512/6858/6858183.png?ga=GA1.1.863853503.1716414990"
+    "title": "Улучши себя шаг за шагом",
+    "description": "Трансформируй свою жизнь с нашим приложением!",
+    "image": "https://cdn-icons-png.freepik.com/512/860/860511.png?ga=GA1.1.863853503.1716414990"
   },
   {
     "key": "4",
-    "title": "Monitored global data-warehouse",
-    "description": "We need to program the open-source IB interface!",
-    "image": "https://cdn-icons-png.freepik.com/512/6858/6858286.png?ga=GA1.1.863853503.1716414990"
+    "title": "Статьи, которые вдохновляют. Список дел, который помогает",
+    "description": "Путь к лучшей жизни начинается здесь.",
+    "image": "https://cdn-icons-png.freepik.com/512/1324/1324895.png"
   }
 ]
 
@@ -109,9 +108,12 @@ const translateX = YOLO.interpolate({
 
 }
 
-export default function IntroCarousel() {
+export default function IntroCarousel({navigation}) {
     const scrollX = React.useRef(new Animated.Value(0)).current;
 
+    const loadScene = () => {
+        navigation.navigate('MainPage');
+    }
   return (
     <View style={styles.container}>
       <StatusBar hidden />
@@ -132,9 +134,12 @@ export default function IntroCarousel() {
             return(
             <View style = {{width, alignItems: 'center', padding: 20}}>
                 <View style = {{flex: .7,  justifyContent: 'center'}}>
+                <TouchableOpacity onPress={loadScene}>
                 <Image 
                 source={{uri: item.image}}
                 style = {{width: width/2, height: width/2, resizeMode:'contain'}}/>
+             </TouchableOpacity>
+                
                 </View>
                 <View style ={{flex: .3}}>
                     <Text style ={{color: '#fff',fontWeight: '800', fontSize: 28, marginBottom: 10}}>{item.title}</Text>

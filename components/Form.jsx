@@ -19,7 +19,7 @@ const CustomButton = ({ title, onPress }) => {
     };
   
     return (
-      <ImageBackground source={require('../assets/backimg1.jpg' )} style={styles.background}>
+      <ImageBackground source={require('../assets/bg1.jpg' )} style={styles.background}>
       <View style={styles.container}>
         <TextInput
           style={styles.input}
@@ -34,7 +34,7 @@ const CustomButton = ({ title, onPress }) => {
   
   const styles = StyleSheet.create({
     container:{
-height:'35%'
+       height:'35%'
     },
       background: {
           resizeMode: 'cover',
@@ -43,17 +43,19 @@ height:'35%'
         
     input: {
       borderBottomWidth: 3,
-      color: 'black',
+      color: 'white',
       fontWeight: 'bold',
-      borderColor: '#344e41',
+      borderColor: '#b8bedd',
       bottom: 20,
       marginVertical: 20,
       marginHorizontal: '20%',
       width: '60%',
     },
     button: {
-      backgroundColor: '#344e41',
+      backgroundColor: '#485696',
       padding: 10,
+      borderColor: '#b8bedd',
+      borderWidth: 2,
       bottom: 15,
       width:'50%',
       marginLeft: 90,

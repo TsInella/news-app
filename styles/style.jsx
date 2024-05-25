@@ -5,7 +5,7 @@ export const gStyle = StyleSheet.create({
     main:{
         flex:1,
         padding:20,
-        backgroundColor: '#dad7cd',
+        backgroundColor: '#fff',
         paddingTop:30,
         scrollBehavior: 'smooth',
         

@@ -53,10 +53,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#f8f9fa',
     height: "100%"
    },
-   back2:{
-    height: "60%",
-    top: 70
-
-   }
 })
 

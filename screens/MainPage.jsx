@@ -68,9 +68,9 @@ const addArticle = (article) => {
     <View style = {gStyle.main}>
         <Modal visible = {modalWindow}>
             <View style = {styles.main}>
-   <ImageBackground source={require('../assets/backimg1.jpg' )} style={styles.background1}/>
+   <ImageBackground source={require('../assets/bg1.jpg' )} style={styles.background1}/>
 
-            <Ionicons name="close-circle-sharp" size={35} color="#a3b18a" style = {styles.iconClose} onPress={() => setModalWindow(false)} />
+            <Ionicons name="arrow-back-circle" size={35} color="#485696" style = {styles.iconClose} onPress={() => setModalWindow(false)} />
             <Text style = {styles.title2}>Форма добавления статьи</Text>
            <FormList addArticle = {addArticle}/>
             </View>
@@ -78,12 +78,12 @@ const addArticle = (article) => {
 
         <View style={styles.iconContainer}>
         <Text style = {styles.titleIcon}>Добавить статью: </Text>
-        <Ionicons name="add-circle" size={30} color="#a3b18a" style={styles.iconAdd} onPress={() => setModalWindow(true)} />
+        <Ionicons name="add-circle" size={30} color="#b8bedd" style={styles.iconAdd} onPress={() => setModalWindow(true)} />
         <Text style = {styles.titleIcon}>Задачи: </Text>
-        <Ionicons name="square-sharp" size={30} color="#a3b18a" style={styles.iconToDo} onPress={loadScene} />
+        <Ionicons name="square-sharp" size={30} color="#b8bedd" style={styles.iconToDo} onPress={loadScene} />
         </View>
 
-        <Text style = {[styles.title, styles.header]}>Саморазвитие</Text>
+        <Text style = {[styles.title, styles.header]}>Статьи</Text>
         <FlatList 
         data = {news}
         renderItem={({item})=> (
@@ -126,8 +126,7 @@ const styles = StyleSheet.create({
         height: '130%',
         flex:1,
         padding:20,
-        
-        backgroundColor: '#edede9',
+        backgroundColor: '#e7e7e7',
         paddingTop:30,
         justifyContent: 'center'
         
@@ -184,14 +183,14 @@ const styles = StyleSheet.create({
         fontSize: 24,
         textAlign: 'center',
         fontWeight: 'bold',
-        color: '#344e41'
+        color: '#364958'
     },
     title2:{
         fontFamily: 'p-bold',
         fontSize: 24,
         textAlign: 'center',
         fontWeight: 'bold',
-        color: '#8a817c'
+        color: '#364958'
     },
     anons:{
         fontFamily: 'p-bold',

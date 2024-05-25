@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderColor: '#e0e1dd',
     borderRadius: 7,
-    backgroundColor: '#dad7cd',
+    backgroundColor: '#b8bedd',
     marginTop: 5,
     fontStyle: 'p-bold'
   },
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderColor: '#e0e1dd',
     borderRadius: 7,
-    backgroundColor: '#dad7cd',
+    backgroundColor: '#b8bedd',
     marginTop: 4,
     fontStyle: 'p-bold'
   },
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     width:'60%',
     marginTop: 10,
     marginLeft: 62,
-    backgroundColor: '#a3b18a',
+    backgroundColor: '#485696',
     padding: 10,
     shadowColor: '#253224',
     shadowOffset: { width: 15, height: 17 },
