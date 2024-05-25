@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, View, TouchableHighlight, StyleSheet } from 'react-native';
-
+ //лист айтем для туду листа (для удаления задачи)
 export default function ListItem({el, deleteHandler}) {
   return (
     <TouchableHighlight onPress={() => deleteHandler(el.key)}>

@@ -3,7 +3,6 @@ import {Button, Text, View, TouchableOpacity, FlatList, Image, StyleSheet, Modal
 import { gStyle } from '../styles/style';
 import { Ionicons } from '@expo/vector-icons';
 import FormList from '../components/FormList';
-import ToDoList from './ToDoList';
 
 export default function MainPage({navigation}) {
     const [news, setNews] = useState([
@@ -39,9 +38,8 @@ const addArticle = (article) => {
         <View style={styles.iconContainer}>
         <Text style = {styles.titleIcon}>Добавить статью: </Text>
         <Ionicons name="add-circle" size={30} color="#588157" style={styles.iconAdd} onPress={() => setModalWindow(true)} />
-        
         <Text style = {styles.titleIcon}>ToDoList: </Text>
-        <Ionicons name="square-sharp" size={30} color="#6b9c6a" style={styles.iconToDo} onPress={() => navigation.navigate('ToDoList')} />
+        <Ionicons name="square-sharp" size={30} color="#6b9c6a" style={styles.iconToDo} />
         </View>
 
         <Text style = {[styles.title, styles.header]}>Саморазвитие</Text>

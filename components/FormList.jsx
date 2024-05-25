@@ -3,7 +3,7 @@ import React from 'react';
 import { Text, View, StyleSheet, TextInput, TouchableOpacity, ImageBackground } from 'react-native';
 import { Formik } from 'formik';
 import { gStyle } from '../styles/style';
-
+//для статей форма заполнения
 export default function FormList({ addArticle }) {
   return (
    
