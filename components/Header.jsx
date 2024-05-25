@@ -3,8 +3,7 @@ import {Text, View, StyleSheet } from 'react-native';
 
 export default function Header() {
   return (
-    <View style = {styles.main}>
-        <Text style = {styles.text}>Список дел</Text>
+    <View>
       
     </View>
   )
@@ -12,13 +11,14 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     main: {
-        paddingTop:50,
-        height:100,
-        backgroundColor: '#3a5a40'
+        paddingTop:10,
+        height:50,
+        backgroundColor: '#dad7cd'
     },
     text:{
         fontSize:16,
-        color: 'white',
+        color: '#344e41',
+        fontStyle: 'p-bold',
         fontStyle:'bold',
         textAlign: 'center'
     }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Text, View, StyleSheet, FlatList } from 'react-native';
+import {Text, View, StyleSheet, FlatList, ImageBackground } from 'react-native';
 import Header from '../components/Header'
 import ListItem from '../components/ListItem';
 import Form from '../components/Form'
@@ -30,21 +30,33 @@ export default function ToDoList() {
     })
   }
   return (
-    <View>
+    <View style = {styles.main}>
       <Header/>
       <Form addHandler = {addHandler}/>
       <View>
+   
+
         <FlatList 
         data = {listOfItems} 
         renderItem={({item}) => (
         <ListItem el={item} deleteHandler={deleteHandler}/>
       )}/>
+  
+
       </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
+   main:{
+    backgroundColor: '#f8f9fa',
+    height: "100%"
+   },
+   back2:{
+    height: "60%",
+    top: 70
 
+   }
 })
 

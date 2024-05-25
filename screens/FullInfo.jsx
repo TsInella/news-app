@@ -1,50 +1,52 @@
-import React, { useState } from 'react';
-import {Text, View, Button, Image, StyleSheet } from 'react-native';
+
+import React from 'react';
+import { Text, View, ScrollView, Image, StyleSheet } from 'react-native';
 import { gStyle } from '../styles/style';
 
-export default function FullInfo({route}) {
-  return(
-    <View style = {styles.main}>
-      <Image style = {styles.image} source={{
-        uri: route.params.img
-      }}
-      
-      />
-        <Text style = {[gStyle.title,styles.title]}> {route.params.name}</Text>
-        <Text style = {styles.full}> {route.params.full}</Text>
-
-    </View>
-  )
+export default function FullInfo({ route }) {
+  return (
+    <ScrollView style={styles.scrollView}>
+      <View style={styles.main}>
+        <Image style={styles.image} source={{ uri: route.params.img }} />
+        <Text style={[gStyle.title, styles.title]}> {route.params.name}</Text>
+        <Text style={styles.full}> {route.params.full}</Text>
+      </View>
+    </ScrollView>
+  );
 }
+
 const styles = StyleSheet.create({
-  main:{
-    backgroundColor: '#dad7cd',
-    height: '100%'
+  scrollView: {
+    flex: 1,
   },
-  image:{
+  main: {
+    height: '100%',
+    backgroundColor: '#dad7cd',
+    padding: 20,
+  },
+  image: {
     width: '100%',
     height: 200,
+    borderRadius: 20,
   },
-  header:{
-    fontSize: 25,
-    marginTop: 10,
-  },
-  title:{
+  title: {
     fontFamily: 'p-bold',
     fontSize: 25,
     textAlign: 'center',
-    marginTop:15,
+    marginTop: 15,
     fontWeight: 'bold',
-    color: '#344e41'
-},
-  full:{
-  fontFamily: 'p-bold',
-  fontSize: 16,
-  textAlign: 'center',
-  marginTop:15,
-  fontWeight: 'bold',
-  color: '#5c6b64',
-  
+    color: '#344e41',
+  },
+  full: {
+    fontFamily: 'p-bold',
+    fontSize: 16,
+    textAlign: 'left',
+    marginTop: 15,
+    fontWeight: 'bold',
+    color: '#5c6b64',
+    width: '104.8%',
+    whiteSpace: 'nowrap',
+  overflow: 'hidden',
+  overflow: 'ellipsis',
   }
-})
-
+});

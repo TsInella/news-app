@@ -3,6 +3,8 @@ import {Text, View, StyleSheet, FlatList } from 'react-native';
 import AppLoading from 'expo-app-loading';
 import { gStyle } from './styles/style';
 import MainPage from './navigate'
+import Navigate from './navigate';
+import IntroCarousel from './screens/IntroCarousel';
 
 
 const fonts = () => Font.loadAsync({
@@ -15,7 +17,7 @@ const [font, setFont] = useState(false);
 
 if(font){
   return(
-    <MainPage/>
+    <IntroCarousel/>
   )
 } else{
   return(

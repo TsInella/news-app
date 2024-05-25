@@ -6,7 +6,8 @@ export const gStyle = StyleSheet.create({
         flex:1,
         padding:20,
         backgroundColor: '#dad7cd',
-        paddingTop:30
+        paddingTop:30,
+        scrollBehavior: 'smooth',
         
     },
     title:{

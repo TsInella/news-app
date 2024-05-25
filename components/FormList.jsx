@@ -6,6 +6,7 @@ import { gStyle } from '../styles/style';
 //для статей форма заполнения
 export default function FormList({ addArticle }) {
   return (
+   <>
    
     <View>
       <Formik
@@ -70,6 +71,7 @@ export default function FormList({ addArticle }) {
         )}
       </Formik>
     </View>
+    </>
    
   );
 }
@@ -87,28 +89,28 @@ const styles = StyleSheet.create({
     marginTop:10
   },
   input: {
-    borderWidth: 1,
+    borderWidth: 2,
     padding: 5,
     height:'9%',
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%',
-    borderColor: 'silver',
+    borderColor: '#e0e1dd',
     borderRadius: 7,
-    backgroundColor: '#a3b18a',
+    backgroundColor: '#dad7cd',
     marginTop: 5,
     fontStyle: 'p-bold'
   },
   inputArticle:{
-    borderWidth: 1,
+    borderWidth: 2,
     padding: 10,
     height: 100,
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%',
-    borderColor: 'silver',
+    borderColor: '#e0e1dd',
     borderRadius: 7,
-    backgroundColor: '#a3b18a',
+    backgroundColor: '#dad7cd',
     marginTop: 4,
     fontStyle: 'p-bold'
   },
@@ -116,7 +118,7 @@ const styles = StyleSheet.create({
     width:'60%',
     marginTop: 10,
     marginLeft: 62,
-    backgroundColor: '#588157',
+    backgroundColor: '#a3b18a',
     padding: 10,
     shadowColor: '#253224',
     shadowOffset: { width: 15, height: 17 },
